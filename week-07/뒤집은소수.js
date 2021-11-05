@@ -33,6 +33,8 @@ function solution(arr) {
       let t = x % 10; // x의 1의 자리
       res = res * 10 + t;
       x = parseInt(x / 10); // 1의자리를 제외한 앞에 수
+
+      // let res = Number or parseInt(x.toString().split('').reverse().join(""));
     }
 
     if (isPrime(res)) {
