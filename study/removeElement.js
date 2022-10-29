@@ -1,5 +1,3 @@
-/* 문제 출처 : https://leetcode.com/problems/remove-element/ */
-
 function removeElement(nums, val) {
     let count = 0
     for(let i = 0; i < nums.length; i++){

@@ -1,5 +1,3 @@
-/* 문제 출처 : https://leetcode.com/problems/palindrome-number/ */
-
 function isPalindrome(x) {
     let str = x.toString();
 
