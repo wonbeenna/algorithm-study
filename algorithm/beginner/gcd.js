@@ -3,6 +3,8 @@ function gcd(a, b) {
     return b === 0 ? a : gcd(b, a % b);
 }
 
+module.exports = gcd;
+
 console.log(gcd(10, 15));
 console.log(gcd(35, 49));
 console.log(gcd(2, 0));

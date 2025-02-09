@@ -1,3 +1,4 @@
+// 소인수분해
 function primeFactorization(n) {
     let factors = [];
     let divisor = 2; // 가장 작은 소수부터 시작
