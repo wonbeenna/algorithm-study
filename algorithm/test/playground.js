@@ -1,10 +1,19 @@
 function solution(A) {
-    let currentLength = A.length;
-    let num = (currentLength + 1) * (currentLength + 2) / 2;
-    let sum = A.reduce((acc, cur) => acc + cur, 0);
+    let x = 2, y = 2; // 현재 위치
 
-    console.log(num)
-    return num - sum;
+    let dx = [0, 0, 1, -1]; // 행 이동값 (X축)
+    let dy = [1, -1, 0, 0]; // 열 이동값 (Y축)
+
+    for (let i = 0; i < 4; i++) {
+        let nx = x + dx[i]; // 새로운 X 좌표
+        let ny = y + dy[i]; // 새로운 Y 좌표
+        console.log(`이동 방향: (${dx[i]}, ${dy[i]}) → 새로운 위치: (${nx}, ${ny})`);
+    }
+
 }
 
-console.log(solution([1, 5, 3, 2, 4])) // 6
+solution(); // 이동 방향: (0, 1) → 새로운 위치: (2, 3)
+            // 이동 방향: (0, -1) → 새로운 위치: (2, 1)
+            // 이동 방향: (1, 0) → 새로운 위치: (3, 2)
+            // 이동 방향: (-1, 0) → 새로운 위치: (1, 2)
+
