@@ -17,6 +17,7 @@ function twoSum(arr, target) {
     return [];
 }
 
+// 배열이 정렬되어야함
 console.log(twoSum([1, 2, 3, 4, 6], 6)); // [2, 4]
 
 // 가장 긴 고유한 부분 문자열 찾기
